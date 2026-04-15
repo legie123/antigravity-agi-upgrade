@@ -1,32 +1,35 @@
-# 🤖 Antigravity AGI Upgrade Core
+# 🤖 Antigravity AGI Upgrade & Global Protocol
 
-Modular framework for autonomous dev-ops, semantic memory, and multi-model decision logic.
+Modular framework and behavioral "DNA" for an autonomous, institutional-grade Antigravity coding assistant.
 
-## 📦 Modules
+## 📦 What's Inside
 
-### 1. Vector RAG (Semantic Memory)
-Uses Supabase and pgvector to index and query your codebase semantically.
-- `scripts/rag-indexer.mjs`: Indexes files into embeddings.
-- `scripts/rag-query.mjs`: Searches codebase using natural language.
+### 1. The Core (Scripts)
+Autonomous modules for infrastructure and dev-ops:
+- `scripts/rag-indexer.mjs`: Semantic memory indexing.
+- `scripts/rag-query.mjs`: RAG retrieval.
+- `scripts/titan-debate.mjs`: Multi-model consensus orchestration.
+- `scripts/preflight-check.mjs`: Build validation for serverless (256MB RAM emulation).
+- `daemon/watchdog.sh`: Self-healing Cloud Run monitor.
 
-### 2. Titan Debate Engine
-Orchestrates a parallel debate between DeepSeek, OpenAI, and Gemini to find the optimal solution for complex problems.
-- `scripts/titan-debate.mjs`
+### 2. The Protocol (DNA)
+The behavioral "Bible" of Antigravity in `/knowledge` and `GLOBAL_PROTOCOL.md`:
+- **Hard Mode**: Engineering-only, fluff-free communication.
+- **Sniper Protocol**: Context-efficient file patching.
+- **Multi-Model Consensus**: Tri-model reasoning for critical decisions.
+- **Design Standards**: Premium Claude-exclusive frontend principles.
 
-### 3. Self-Healing Watchdog
-Monitors Google Cloud Run services and handles incidents automatically.
-- `daemon/watchdog.sh`
+## 🚀 Training your Antigravity
 
-### 4. Pre-Flight Simulator
-Validates builds under resource constraints (RAM/CPU) before deploying to serverless environments.
-- `scripts/preflight-check.mjs`
+To reach the performance levels of this system, "inject" the knowledge into your assistant:
 
-### 5. Knowledge Graph Builder
-Builds a relationship map of your project modules in MCP Memory.
-- `scripts/graph-builder.mjs`
+1. **Upload `GLOBAL_PROTOCOL.md`** to your assistant's knowledge base.
+2. **Issue the Command**: *"Act as Antigravity TopG. Adhere to the Hard Mode and Sniper protocols provided. Prioritize performance and aesthetics as per the Global Protocol."*
+3. **Configure Environment**: Set up the scripts in this repo matching your local context.
 
-## 🚀 Setup
+---
 
+## 🔗 Setup
 1. Copy `.env.example` to `.env`.
-2. Populate the API keys.
-3. Run SQL migration (provided in `rag-query.mjs`) in your Supabase console.
+2. Populate LLM and Supabase keys.
+3. Run the SQL vector migration (see `scripts/rag-query.mjs`).
